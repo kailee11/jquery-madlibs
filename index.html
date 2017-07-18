@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mad Libs</title>
+
+	<!-- CSS links -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+	<!-- Online example's links -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<!-- Bob's links -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+	<!-- Home Page -->
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ">Home</a>
+			<h1>Mad Libs</h1>
+		</div>
+		<div data-role="main">
+  			<h1>Welcome to Kailee's Mad Lib!</h1>
+  				<img style="margin: auto; display: block; zoom: 50%;" src="http://is1.mzstatic.com/image/thumb/Purple122/v4/2d/59/b1/2d59b1ad-672f-08b3-12e6-4dd74e2b4815/source/1200x630bb.jpg">
+				<div data-role="controlgroup" data-type="horizontal" style="text-align: center">
+					<a href="#inputs" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Start Mad Lib</a>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- Inputs Page -->
+	<div data-role="page" id="inputs">
+		<div data-role="header">
+			<a href="#home" data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ">Home</a>
+			<h1>Mad Libs</h1>
+		</div>
+		<div data-role="main">
+			<!-- start form -->
+			<div id="questions">
+				<h2>Fill out the following parts of speech:</h2>
+				<hr>
+
+				<form role="form">
+					<div class="form-group">
+						<label for="input1">Celebrity Name</label>
+						<input id="input1" class="form-control input1" type="text" placeholder="Enter the name of a celebrity">
+					</div>
+					<div class="form-group">
+					    <label for="input2">Color</label>
+					    <input id="input2" class="form-control input2" type="text" placeholder="Enter a color">
+					</div>
+					<div class="form-group">
+						<label for="input3">Adjective #1</label>
+						<input id="input3" class="form-control input3" type="text" placeholder="Enter an adjective">
+					</div>
+					<div class="form-group">
+						<label for="input4">Plural Noun</label>
+						<input id="input4" class="form-control input4" type="text" placeholder="Enter a plural noun">
+					</div>
+					<div class="form-group">
+						<label for="input5">Verb #1</label>
+						<input id="input5" class="form-control input5" type="text" placeholder="Enter a verb">
+					</div>
+					<div class="form-group">
+						<label for="input6">Verb #2</label>
+						<input id="input6" class="form-control input6" type="text" placeholder="Enter a verb">
+					</div>
+					<div class="form-group">
+						<label for="input7">Shoes</label>
+						<input id="input7" class="form-control input7" type="text" placeholder="Enter a type of shoes">
+					</div>
+					<div class="form-group">
+						<label for="input8">Clothing Brand</label>
+						<input id="input8" class="form-control input8" type="text" placeholder="Enter a clothing brand">
+					</div>
+					<div class="form-group">
+						<label for="input9">Adjective #2</label>
+						<input id="input9" class="form-control input9" type="text" placeholder="Enter an adjective">
+					</div>
+					<div class="form-group">
+						<label for="input10">Music Genre</label>
+						<input id="input10" class="form-control input10" type="text" placeholder="Enter a music genre">
+					</div>
+				</form>
+				
+				<button id="btn-click" type="submit" class="btn btn-primary btn-lg">Generate!</button>
+				
+				<hr>
+			</div>
+			<!-- end form -->
+
+			<div data-role="controlgroup" data-type="horizontal" style="text-align: center">
+				<a href="#story" data-transition="flip" class="ui-btn ui-icon-action ui-btn-icon-right">Completed Mad Lib</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Story Page -->
+	<div data-role="page" id="story">
+		<div data-role="header">
+			<a href="#home" data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow ">Home</a>
+			<a href="#inputs" data-transition="flip" class="ui-btn ui-icon-bullets ui-btn-icon-left ui-corner-all ui-shadow ">Inputs</a>
+			<h1>Mad Libs</h1>
+		</div>
+		<div data-role="main">
+			<div id="story">
+				<h1>Uptown Mad Libs</h1>
+					<hr>
+					<img style="zoom: 50%; float: left;" src="https://s-media-cache-ak0.pinimg.com/736x/d7/2d/9f/d72d9f64d50c0ef769fee75dd815fbb7--bruno-mars-art-bruno-mars-funny.jpg">
+
+					<h3;">This hit, that ice cold
+					<br>
+					<strong><span class="input1"></span></strong>, that <strong><span class="input2"></span></strong> gold
+					<br>
+					This one, for them <strong><span class="input3"></span></strong> girls
+					<br>
+					Them good <strong><span class="input4"></span></strong>, straight masterpieces
+					<br>
+					Stylin', <strong><span class="input5"></span></strong>
+					<br>
+					<strong><span class="input6"></span></strong> it up in the city
+					<br>
+					Got <strong><span class="input7"></span></strong> on with <strong><span class="input8"></span></strong>
+					<br>
+					Gotta kiss myself I’m so <strong><span class="input9"></span></strong>
+					<br>
+					<br>
+					Uptown <strong><span class="input10"></span></strong> gonna give it to you!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
